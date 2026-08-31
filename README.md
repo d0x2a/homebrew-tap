@@ -1,18 +1,32 @@
-# D0x2a Tap
+# d0x2a tap
 
-## How do I install these formulae?
+Homebrew casks for [d0x2a](https://github.com/d0x2a) projects.
 
-`brew install d0x2a/tap/<formula>`
+## mTerm
 
-Or `brew tap d0x2a/tap` and then `brew install <formula>`.
+A native macOS terminal emulator — opinionated, GPU-accelerated, focused.
+See [d0x2a/mTerm](https://github.com/d0x2a/mTerm).
 
-Or, in a `brew bundle` `Brewfile`:
+```bash
+brew install --cask d0x2a/tap/mterm
+```
+
+Or tap first, then install:
+
+```bash
+brew tap d0x2a/tap
+brew install --cask mterm
+```
+
+Or in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "d0x2a/tap"
-brew "<formula>"
+cask "mterm"
 ```
 
-## Documentation
+To remove it along with its preferences and session state:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew uninstall --zap --cask mterm
+```
