@@ -1,6 +1,6 @@
 cask "mterm" do
-  version "1.3.1"
-  sha256 "5edd58d930246a8ed752957a64df51bae57f733a3d357d4710b3b36db66510a6"
+  version "1.4.0"
+  sha256 "7ce28bc3299366421b414399b9ca051ecb80d90ea051d487b4167480816cbdca"
 
   url "https://github.com/d0x2a/mTerm/releases/download/v#{version}/mTerm-#{version}.dmg"
   name "mTerm"
