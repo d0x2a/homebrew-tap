@@ -1,22 +1,24 @@
-cask "mterm" do
-  version "1.6.0"
-  sha256 "09baee257318245838b795e1f02beac26415aad4db67c0462d20dff0d4005d2a"
+cask "kuddo" do
+  version "1.0.0"
+  sha256 "3f4754992c3d106cddf2c9ea9e796ac219c0f23efbe152e46e3fee70c2e6879c"
 
-  url "https://github.com/d0x2a/mTerm/releases/download/v#{version}/mTerm-#{version}.dmg"
-  name "mTerm"
+  url "https://github.com/d0x2a/kuddo/releases/download/v#{version}/Kuddo-#{version}.dmg"
+  name "Kuddo"
   desc "Minimalistic GPU-accelerated terminal emulator"
-  homepage "https://github.com/d0x2a/mTerm/"
+  homepage "https://github.com/d0x2a/kuddo/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
-  app "mTerm.app"
+  app "Kuddo.app"
 
   zap trash: [
+    "~/Library/Application Support/Kuddo",
     "~/Library/Application Support/mTerm",
     "~/Library/Caches/com.d0x2a.mTerm",
     "~/Library/Preferences/com.d0x2a.mTerm.plist",
