@@ -31,7 +31,15 @@ To remove it along with its preferences and session state:
 brew uninstall --zap --cask kuddo
 ```
 
-Kuddo was called mTerm up to 1.6.0. The `mterm` cask is renamed to `kuddo`,
-so an existing install moves across on the next `brew update && brew upgrade`.
-mTerm 1.6.0, the last release with an Intel build, stays at
+Kuddo was called mTerm up to 1.6.0. The `mterm` cask now installs Kuddo
+too, so an existing install moves across on the next `brew upgrade`, with a
+note that the cask is deprecated. To switch to the new name:
+
+```bash
+brew uninstall --cask mterm && brew install --cask d0x2a/tap/kuddo
+```
+
+Homebrew trusts a third-party cask by its name, so the full
+`d0x2a/tap/kuddo` matters the first time. mTerm 1.6.0, the last release with
+an Intel build, stays at
 [d0x2a/mTerm](https://github.com/d0x2a/mTerm/releases/tag/v1.6.0).

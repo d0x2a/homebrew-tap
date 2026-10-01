@@ -1,4 +1,4 @@
-cask "kuddo" do
+cask "mterm" do
   version "1.0.0"
   sha256 "3f4754992c3d106cddf2c9ea9e796ac219c0f23efbe152e46e3fee70c2e6879c"
 
@@ -8,11 +8,12 @@ cask "kuddo" do
   homepage "https://github.com/d0x2a/kuddo/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    cask "kuddo"
   end
 
-  conflicts_with cask: "mterm"
+  deprecate! date: "2026-10-01", because: "is now called Kuddo", replacement_cask: "kuddo"
+
+  conflicts_with cask: "kuddo"
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
