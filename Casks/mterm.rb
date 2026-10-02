@@ -1,6 +1,6 @@
 cask "mterm" do
-  version "1.0.1"
-  sha256 "a7a013e4deb7f51246e1897f2900d63205222b8b21f14c6c88acb9a64d786c0f"
+  version "1.0.2"
+  sha256 "6f685ae162838def8806fc9ee41a4ccf2c2c30a0b218b4b4cff23d168ef30dc3"
 
   url "https://github.com/d0x2a/kuddo/releases/download/v#{version}/Kuddo-#{version}.dmg"
   name "Kuddo"
