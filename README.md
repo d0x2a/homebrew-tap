@@ -25,6 +25,9 @@ tap "d0x2a/tap"
 cask "kuddo"
 ```
 
+The cask also installs a `kuddo` command: `kuddo` opens Kuddo, and
+`kuddo <folder>` opens a tab there.
+
 To remove it along with its preferences and session state:
 
 ```bash
