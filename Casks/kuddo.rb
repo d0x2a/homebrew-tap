@@ -12,7 +12,6 @@ cask "kuddo" do
     strategy :github_latest
   end
 
-  conflicts_with cask: "mterm"
   depends_on arch: :arm64
   depends_on macos: :sonoma
 

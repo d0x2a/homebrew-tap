@@ -31,9 +31,8 @@ To remove it along with its preferences and session state:
 brew uninstall --zap --cask kuddo
 ```
 
-Kuddo was called mTerm up to 1.6.0. The `mterm` cask now installs Kuddo
-too, so an existing install moves across on the next `brew upgrade`, with a
-note that the cask is deprecated. To switch to the new name:
+Kuddo was called mTerm up to 1.6.0. An install made under the old name,
+`mterm`, no longer gets updates; switch it to the new one with:
 
 ```bash
 brew uninstall --cask mterm && brew install --cask d0x2a/tap/kuddo
