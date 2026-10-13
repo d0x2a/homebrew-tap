@@ -45,3 +45,23 @@ Homebrew trusts a third-party cask by its name, so the full
 `d0x2a/tap/kuddo` matters the first time. mTerm 1.6.0, the last release with
 an Intel build, stays at
 [d0x2a/mTerm](https://github.com/d0x2a/mTerm/releases/tag/v1.6.0).
+
+## Athanor
+
+A menu bar app that keeps a list of shell scripts and runs them: start, stop
+and restart them, see their CPU, memory and ports, read their output, and have
+the ones that crash restarted. See [d0x2a/athanor](https://github.com/d0x2a/athanor).
+Apple silicon only.
+
+```bash
+brew install --cask d0x2a/tap/athanor
+```
+
+Scripts keep running when Athanor quits or is upgraded, and the next launch
+picks them up again. They also outlive an uninstall, so stop them first
+(Stop all in the menu). To remove Athanor along with its script list, logs and
+preferences:
+
+```bash
+brew uninstall --zap --cask athanor
+```
