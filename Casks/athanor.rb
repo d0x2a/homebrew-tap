@@ -1,6 +1,6 @@
 cask "athanor" do
-  version "0.1.1"
-  sha256 "f0af77b970b30f6d156a30f9830739abd70b37b49ff04fbb7068636d70058c83"
+  version "0.2.0"
+  sha256 "dfc0e948f1779f220da864ad9f3df56b6bb2bb5d4ef9425222ca652d9de59e3e"
 
   url "https://github.com/d0x2a/athanor/releases/download/v#{version}/Athanor-#{version}.dmg"
   name "Athanor"
