@@ -1,6 +1,6 @@
 cask "kuddo" do
-  version "1.0.11"
-  sha256 "4caae7bac93222504c50357321908372afd8916b7c443b87c0deb1ce1146ef5f"
+  version "1.0.12"
+  sha256 "185abf69f0079b02fe30be58f33ad6a6e12b42ce50dc377b1a182ed7feebaabc"
 
   url "https://github.com/d0x2a/kuddo/releases/download/v#{version}/Kuddo-#{version}.dmg"
   name "Kuddo"
